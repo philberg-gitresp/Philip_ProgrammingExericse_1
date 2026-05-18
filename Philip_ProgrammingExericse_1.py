@@ -29,21 +29,24 @@ def process_sales(remaining_tickets, tickets_bought):
 # Our buyers are the accumulator in the code.
 #############################################
 
-total_tickets = 20
-buyers = 0
+def main():
+    total_tickets = 20
+    buyers = 0
 
-print("Welcome to Regal Films Cinema!")
+    print("Welcome to Regal Films Cinema!")
 
-while total_tickets > 0:
+    while total_tickets > 0:
 
-    tickets = buy_tickets(total_tickets)
+        tickets = buy_tickets(total_tickets)
 
-    if tickets > 0:
-        total_tickets = process_sales(total_tickets, tickets)
-        buyers += 1
+        if tickets > 0:
+            total_tickets = process_sales(total_tickets, tickets)
+            buyers += 1
 
-# Displays the Results.
-print(" ")
-print("Unfortunately, all of our tickets have been sold out.")
-print("Thanks for coming to Regal Films Cinema, we hope to see you again!")
-print(f"Total Number of Buyers: {buyers}")
+    # Displays the Results.
+    print(" ")
+    print("Unfortunately, all of our tickets have been sold out.")
+    print("Thanks for coming to Regal Films Cinema, we hope to see you again!")
+    print(f"Total Number of Buyers: {buyers}")
+
+main()
