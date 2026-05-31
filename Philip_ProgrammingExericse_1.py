@@ -1,5 +1,5 @@
 # This program displays a total number of buyers who buy
-# up to 4 cinema tickets, which is no more than 20.
+# up to 4 cinema tickets, which is no more than 10.
 
 # The function for how many tickets a buyer would like to buy.
 def buy_tickets(remaining_tickets):
