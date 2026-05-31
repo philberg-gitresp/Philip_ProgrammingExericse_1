@@ -30,7 +30,7 @@ def process_sales(remaining_tickets, tickets_bought):
 #############################################
 
 def main():
-    total_tickets = 20
+    total_tickets = 10
     buyers = 0
 
     print("Welcome to Regal Films Cinema!")
