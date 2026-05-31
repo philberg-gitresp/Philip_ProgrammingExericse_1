@@ -25,7 +25,7 @@ def process_sales(remaining_tickets, tickets_bought):
     return remaining_tickets
 
 ############## Main Program #################
-# There are 20 tickets for the cinema.
+# There are 10 tickets for the cinema.
 # Our buyers are the accumulator in the code.
 #############################################
 
