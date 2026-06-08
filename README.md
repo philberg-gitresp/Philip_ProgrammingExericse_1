@@ -6,11 +6,10 @@ The function for how many tickets a buyer would like to buy (1-4)
 
 Parameters:
 tickets (How many would the buyer purchase?)
-buyers (How many buyers came to the cinema?)
+remaining_tickets (The remaining tickets that are left for purchase.)
 
 Variables:
-remaining_tickets (The remaining tickets that are left for purchase.)
-total_tickets (The total amount of tickets at the cinema, there were 20 remaining.)
+None
 
 Logic:
 1. The program asks how many tickets from the remaining 20 that the buyer will purchase ranging from 1-4. They can not pick nothing or pick tickets that are not enough.
@@ -23,11 +22,11 @@ Returns: tickets
 The function to process the ticket sale.
 
 Parameters:
-None
-
-Variables:
 remaining_tickets (The remaining tickets that are left for purchase.)
 tickets_bought (How many tickets were bought.)
+
+Variables:
+None
 
 Logic:
 1. Issues that the purchase has been successful.
@@ -35,3 +34,19 @@ Logic:
 3. Continues to ask the viewer to input till there are no more tickets left (Similar to the last function).
 
 Returns: remaining_tickets
+
+## Function: main
+The main program holds everything together.
+
+Parameters:
+buyers (How many buyers came to the cinema?)
+
+Variables:
+total_tickets (The total amount of tickets at the cinema, there were 20 remaining.)
+
+Logic:
+1. 20 tickets are set to be purchased in a range through 1 to 4 depending on what the input has been given.
+2. The amount the input is given decreases the tickets till there are none left as the buyer count goes up depending on how many purchases from someone were there.
+3. After all the tickets have been sold out, it displays the number of buyers there were during the process.
+
+Returns: None
